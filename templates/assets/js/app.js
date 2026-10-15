@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!productContainer) return;
 
     // API manzili: backend (Django REST Framework) mahsulotlarni GET /product/ orqali qaytaradi
-    const API_URL = "https://birzumdadrf.onrender.com/product/";
+    const API_URL = "https://lanati-birzumda-02w6.onrender.com/product/";
     // Render'dagi server uyqudan uyg'onishi uchun ko'proq vaqt kerak bo'lishi mumkin
     const REQUEST_TIMEOUT_MS = 60000;
     const pagination = qs(".product-pagination");
