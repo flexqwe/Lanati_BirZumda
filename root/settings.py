@@ -1,6 +1,4 @@
-"""
-Django settings for root project.
-"""
+
 
 import os
 from pathlib import Path
@@ -45,8 +43,8 @@ INSTALLED_APPS = [
     "rest_framework",
     "drf_yasg",
     "django_filters",
+    "corsheaders",
 ]
-
 
 AUTH_USER_MODEL = "app.User"
 
@@ -54,6 +52,7 @@ AUTH_USER_MODEL = "app.User"
 # Middleware
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -89,8 +88,6 @@ WSGI_APPLICATION = "root.wsgi.application"
 
 
 # Database
-# SQLite is suitable for an initial test deployment.
-# For persistent production data, configure PostgreSQL.
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
@@ -130,11 +127,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 LANGUAGE_CODE = "en-us"
-
 TIME_ZONE = "UTC"
-
 USE_I18N = True
-
 USE_TZ = True
 
 
@@ -159,7 +153,6 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 
 # Cache
-# This works without a separate Redis server.
 CACHES = {
     "default": {
         "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
@@ -175,6 +168,12 @@ REST_FRAMEWORK = {
     ]
 }
 
+
+# CORS: local development
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:63342",
+    "http://127.0.0.1:63342",
+]
 
 # Default primary key type
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
