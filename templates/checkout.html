@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bir Zumda - Checkout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header>
+    <div class="container navbar">
+        <a href="index.html" class="logo"><i class="fa-solid fa-bolt"></i> Bir Zumda</a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="mahsulotlar.html">Mahsulotlar</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="biz-haqimizda.html">Biz haqimizda</a></li>
+            <li><a href="aloqa.html">Aloqa</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="#" id="theme-toggle" title="Tungi rejim"><i class="fa-solid fa-moon"></i></a>
+            <a href="mahsulotlar.html"><i class="fa-solid fa-search"></i></a>
+            <a href="login.html" title="Shaxsiy kabinet"><i class="fa-regular fa-user"></i></a>
+            <a href="savatcha.html" style="position: relative;">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-badge" id="cart-badge-count">2</span>
+            </a>
+            <div class="mobile-toggle" id="mobile-menu-btn"><i class="fa-solid fa-bars-staggered"></i></div>
+        </div>
+    </div>
+</header>
+<main class="page-section">
+    <div class="container">
+        <div class="section-title">
+            <h1>Checkout</h1>
+            <p>Buyurtma formasining statik frontend ko'rinishi</p>
+            <div class="line"></div>
+        </div>
+        <section class="checkout-layout">
+            <form class="checkout-form card-surface">
+                <div class="form-row single-column-row">
+                    <div class="form-group"><label>Telefon</label><input type="tel" placeholder="+998 90 123 45 67"></div>
+                </div>
+                <div class="form-group form-group-address"><label>Manzil</label><input type="text" placeholder="Toshkent shahri, Yunusobod tumani"></div>
+
+                <div class="payment-box">
+                    <h3>To'lov turi</h3>
+                    <label class="payment-option main-payment-option">
+                        <input type="radio" name="payment_type" value="cash" id="payment-cash" checked>
+                        <span>Naqd pul</span>
+                    </label>
+                    <label class="payment-option main-payment-option">
+                        <input type="radio" name="payment_type" value="card" id="payment-card">
+                        <span>Karta</span>
+                    </label>
+                    <label class="payment-option main-payment-option">
+                        <input type="radio" name="payment_type" value="online" id="payment-online">
+                        <span>Online to'lov</span>
+                    </label>
+
+                    <div class="online-payment-methods" id="online-payment-methods">
+                        <div class="online-payment-logos">
+                            <label class="provider-card">
+                                <input type="radio" name="online_provider" value="payme">
+                                <span class="provider-logo"><img src="assets/images/payme-logo-trimmed.png" alt="Payme logo"></span>
+                            </label>
+                            <label class="provider-card">
+                                <input type="radio" name="online_provider" value="click">
+                                <span class="provider-logo"><img src="assets/images/click-logo-trimmed.png" alt="Click logo"></span>
+                            </label>
+                            <label class="provider-card">
+                                <input type="radio" name="online_provider" value="paynet">
+                                <span class="provider-logo"><img src="assets/images/paynet-logo-trimmed.png" alt="Paynet logo"></span>
+                            </label>
+                        </div>
+                        <p class="online-payment-note">Online to'lov xizmatidan birini dumaloq tanlov orqali belgilang.</p>
+                    </div>
+                </div>
+
+                <div class="form-group delivery-group">
+                    <label for="delivery-type">Yetkazib berish turi</label>
+                    <div class="delivery-select-wrap">
+                        <select id="delivery-type" name="delivery_type" class="delivery-select">
+                            <option value="0" selected>Bepul</option>
+                            <option value="25000">Standart - 25 000</option>
+                            <option value="50000">Tezkor - 50 000</option>
+                        </select>
+                    </div>
+                </div>
+
+                <a href="#" class="btn btn-primary" style="width:100%;">Buyurtmani tasdiqlash</a>
+            </form>
+
+            <aside class="checkout-summary card-surface">
+                <h3>Buyurtma tarkibi</h3>
+                <div class="mini-related-list">
+                    <div class="mini-related-item"><img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=800&q=80" alt="iPhone"><div><h4>iPhone 15 Pro Max</h4><span>1 x 12 999 000 so'm</span></div></div>
+                    <div class="mini-related-item"><img src="https://images.unsplash.com/photo-1517336714739-489689fd1ca8?auto=format&fit=crop&w=900&q=80" alt="MacBook"><div><h4>MacBook Air M3 13"</h4><span>1 x 15 499 000 so'm</span></div></div>
+                </div>
+                <div class="summary-row"><span>Mahsulotlar</span><strong id="products-total">28 498 000 so'm</strong></div>
+                <div class="summary-row"><span>Yetkazib berish</span><strong id="delivery-price">Bepul</strong></div>
+                <div class="summary-total"><span>Jami</span><strong id="grand-total">28 498 000 so'm</strong></div>
+            </aside>
+        </section>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo"><i class="fa-solid fa-bolt"></i> Bir Zumda</a>
+                <p style="margin-top: 15px;">O'zbekistondagi eng tezkor va ishonchli maishiy texnika xarid qilish platformasi. Orzuingizdagi texnikani bir zumda xarid qiling!</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Kompaniya</h4>
+                <ul class="footer-links">
+                    <li><a href="biz-haqimizda.html">Biz haqimizda</a></li>
+                    <li><a href="mahsulotlar.html">Do'konlarimiz</a></li>
+                    <li><a href="blog.html">Blog va Yangiliklar</a></li>
+                    <li><a href="#">Bo'sh ish o'rinlari</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Mijozlarga</h4>
+                <ul class="footer-links">
+                    <li><a href="aloqa.html">Aloqa</a></li>
+                    <li><a href="#">Yetkazib berish shartlari</a></li>
+                    <li><a href="#">Muddatli to'lov</a></li>
+                    <li><a href="#">Kafolat va qaytarish</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Yangiliklarga obuna</h4>
+                <p>Yangi texnikalar va chegirmalar haqida xabardor bo'ling!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Emailingiz" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Bir Zumda MChJ. Barcha huquqlar himoyalangan.</p></div>
+    </div>
+</footer>
+<div id="toast-container" class="toast-container"></div>
+<script src="assets/js/app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const paymentTypeInputs = document.querySelectorAll('input[name="payment_type"]');
+    const onlinePaymentMethods = document.getElementById('online-payment-methods');
+    const onlineProviderInputs = document.querySelectorAll('input[name="online_provider"]');
+    const deliveryTypeSelect = document.getElementById('delivery-type');
+    const deliveryPriceEl = document.getElementById('delivery-price');
+    const grandTotalEl = document.getElementById('grand-total');
+    const productsTotal = 28498000;
+
+    function formatPrice(value) {
+        return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + " so'm";
+    }
+
+    function toggleOnlinePaymentOptions() {
+        const selectedPaymentType = document.querySelector('input[name="payment_type"]:checked');
+        const isOnlinePayment = !!selectedPaymentType && selectedPaymentType.value === 'online';
+
+        if (onlinePaymentMethods) {
+            onlinePaymentMethods.style.display = isOnlinePayment ? 'block' : 'none';
+            onlinePaymentMethods.classList.toggle('active', isOnlinePayment);
+        }
+
+        if (!isOnlinePayment) {
+            onlineProviderInputs.forEach((input) => {
+                input.checked = false;
+            });
+        }
+    }
+
+    function updateDeliverySummary() {
+        if (!deliveryTypeSelect || !deliveryPriceEl || !grandTotalEl) return;
+        const deliveryValue = Number(deliveryTypeSelect.value || 0);
+        deliveryPriceEl.textContent = deliveryValue === 0 ? 'Bepul' : formatPrice(deliveryValue);
+        grandTotalEl.textContent = formatPrice(productsTotal + deliveryValue);
+    }
+
+    paymentTypeInputs.forEach((input) => {
+        input.addEventListener('change', toggleOnlinePaymentOptions);
+        input.addEventListener('click', toggleOnlinePaymentOptions);
+    });
+
+    document.querySelectorAll('.main-payment-option').forEach((label) => {
+        label.addEventListener('click', function () {
+            const radio = label.querySelector('input[name="payment_type"]');
+            if (radio) {
+                radio.checked = true;
+                toggleOnlinePaymentOptions();
+            }
+        });
+    });
+
+    if (deliveryTypeSelect) {
+        deliveryTypeSelect.addEventListener('change', updateDeliverySummary);
+    }
+
+    toggleOnlinePaymentOptions();
+    updateDeliverySummary();
+});
+</script>
+</body>
+</html>

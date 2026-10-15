@@ -1,0 +1,21 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="800" height="600" rx="36" fill="url(#bg)"/>
+<circle cx="587" cy="160" r="92" fill="#6D63FF" fill-opacity="0.22"/>
+<circle cx="676" cy="423" r="114" fill="#FF7A1A" fill-opacity="0.18"/>
+<rect x="104" y="172" width="238" height="284" rx="30" fill="#121A3B"/>
+<rect x="120" y="191" width="206" height="241" rx="20" fill="#EAEFFF"/>
+<rect x="430" y="110" width="230" height="330" rx="22" fill="#1C2552"/>
+<rect x="448" y="128" width="194" height="260" rx="14" fill="#DDE4FF"/>
+<rect x="396" y="442" width="298" height="18" rx="9" fill="#A8B2E8"/>
+<rect x="468" y="468" width="152" height="12" rx="6" fill="#7F8BC8"/>
+<circle cx="222" cy="401" r="12" fill="#BEC8F8"/>
+<path d="M244 224C210 243 190 278 190 318C190 377 237 424 296 424C306 424 316 423 325 420V246C318 244 311 243 304 243C282 243 261 236 244 224Z" fill="#7B6CFF"/>
+<text x="98" y="96" fill="white" font-family="Arial, sans-serif" font-size="42" font-weight="700">Bir Zumda texnika</text>
+<text x="98" y="132" fill="#D7DEFF" font-family="Arial, sans-serif" font-size="24">Smartfonlar • Noutbuklar • Maishiy texnika</text>
+<defs>
+<linearGradient id="bg" x1="53" y1="31" x2="755" y2="569" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2E3192"/>
+<stop offset="1" stop-color="#4F46E5"/>
+</linearGradient>
+</defs>
+</svg>

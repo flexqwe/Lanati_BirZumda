@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bir Zumda - Mahsulotlar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header>
+    <div class="container navbar">
+        <a href="index.html" class="logo"><i class="fa-solid fa-bolt"></i> Bir Zumda</a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="mahsulotlar.html">Mahsulotlar</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="biz-haqimizda.html">Biz haqimizda</a></li>
+            <li><a href="aloqa.html">Aloqa</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="#" id="theme-toggle" title="Tungi rejim"><i class="fa-solid fa-moon"></i></a>
+            <a href="mahsulotlar.html"><i class="fa-solid fa-search"></i></a>
+            <a href="login.html" title="Shaxsiy kabinet"><i class="fa-regular fa-user"></i></a>
+            <a href="savatcha.html" style="position: relative;">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-badge" id="cart-badge-count">2</span>
+            </a>
+            <div class="mobile-toggle" id="mobile-menu-btn"><i class="fa-solid fa-bars-staggered"></i></div>
+        </div>
+    </div>
+</header>
+
+<main class="page-section">
+    <div class="container">
+        <div class="section-title"><h1>Mahsulotlar</h1><p>Barcha maishiy texnika va elektronika bir joyda</p><div class="line"></div></div>
+        <div class="shop-layout">
+            <aside class="shop-sidebar">
+                <div class="filter-group"><h4>Toifalar</h4><ul class="filter-list"><li><label><input type="checkbox" checked> Barchasi</label></li><li><label><input type="checkbox"> Smartfonlar</label></li><li><label><input type="checkbox"> Noutbuklar</label></li><li><label><input type="checkbox"> Televizorlar</label></li><li><label><input type="checkbox"> Maishiy texnika</label></li></ul></div>
+                <div class="filter-group"><h4>Brendlar</h4><ul class="filter-list"><li><label><input type="checkbox"> Apple</label></li><li><label><input type="checkbox"> Samsung</label></li><li><label><input type="checkbox"> LG</label></li><li><label><input type="checkbox"> Xiaomi</label></li></ul></div>
+            </aside>
+            <div class="shop-main">
+                <form class="shop-header">
+                    <div class="shop-search"><i class="fa-solid fa-search"></i><input type="text" placeholder="Model yoki nomini kiriting..."><button type="submit" class="shop-search-btn" aria-label="Qidirish"><i class="fa-solid fa-search"></i></button></div>
+                    <div class="shop-sort"><select><option>Arzonroq</option><option>Qimmatroq</option><option>Yangiroq</option></select></div>
+                </form>
+                
+
+<div class="product-grid" id="product-list-container" aria-live="polite"></div>
+
+<div class="pagination product-pagination">
+    <a class="page-btn" href="#" aria-label="Oldingi sahifa">&laquo;</a>
+    <a class="page-btn active" href="#">1</a>
+    <a class="page-btn" href="#">2</a>
+    <a class="page-btn" href="#" aria-label="Keyingi sahifa">&raquo;</a>
+</div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo"><i class="fa-solid fa-bolt"></i> Bir Zumda</a>
+                <p style="margin-top: 15px;">O'zbekistondagi eng tezkor va ishonchli maishiy texnika xarid qilish platformasi. Orzuingizdagi texnikani bir zumda xarid qiling!</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Kompaniya</h4>
+                <ul class="footer-links">
+                    <li><a href="biz-haqimizda.html">Biz haqimizda</a></li>
+                    <li><a href="mahsulotlar.html">Do'konlarimiz</a></li>
+                    <li><a href="blog.html">Blog va Yangiliklar</a></li>
+                    <li><a href="#">Bo'sh ish o'rinlari</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Mijozlarga</h4>
+                <ul class="footer-links">
+                    <li><a href="aloqa.html">Aloqa</a></li>
+                    <li><a href="#">Yetkazib berish shartlari</a></li>
+                    <li><a href="#">Muddatli to'lov</a></li>
+                    <li><a href="#">Kafolat va qaytarish</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Yangiliklarga obuna</h4>
+                <p>Yangi texnikalar va chegirmalar haqida xabardor bo'ling!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Emailingiz" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bir Zumda MChJ. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </div>
+</footer>
+<div id="toast-container" class="toast-container"></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

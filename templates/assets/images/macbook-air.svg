@@ -1,0 +1,16 @@
+<svg width="900" height="700" viewBox="0 0 900 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="900" height="700" rx="32" fill="#EEF2FF"/>
+<rect x="180" y="110" width="540" height="360" rx="20" fill="#1E293B"/>
+<rect x="201" y="131" width="498" height="318" rx="10" fill="url(#screen)"/>
+<path d="M110 494H790L731 558H169L110 494Z" fill="#CBD5E1"/>
+<rect x="292" y="506" width="316" height="16" rx="8" fill="#94A3B8"/>
+<path d="M450 282C429 307 420 336 423 368C443 366 463 357 478 341C493 326 502 305 500 283C482 282 463 290 450 282Z" fill="white" fill-opacity="0.9"/>
+<path d="M517 389C505 406 493 423 473 423C454 423 448 412 425 412C401 412 394 423 377 423C358 424 344 405 332 388C308 354 290 290 315 248C327 227 350 214 375 214C394 214 412 226 425 226C437 226 460 212 484 213C494 213 523 216 543 245C541 246 507 266 507 307C507 355 549 371 550 371C549 372 544 388 517 389Z" fill="white" fill-opacity="0.9"/>
+<text x="450" y="625" text-anchor="middle" fill="#334155" font-family="Arial, sans-serif" font-size="42" font-weight="700">MacBook Air M3</text>
+<defs>
+<linearGradient id="screen" x1="201" y1="131" x2="699" y2="449" gradientUnits="userSpaceOnUse">
+<stop stop-color="#4F46E5"/>
+<stop offset="1" stop-color="#22C55E"/>
+</linearGradient>
+</defs>
+</svg>
